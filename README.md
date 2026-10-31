@@ -69,9 +69,10 @@ python -u /content/finetune.py --run 0 --repo_dir /content/DiffWater/DiffWater \
 Run A is higher than Run B by 1.51 dB PSNR (standard error 0.40); SSIM does not separate them. Details, figures and the analysis are in the report.
 
 ## Model Checkpoints
+[Google Drive Link](https://drive.google.com/drive/folders/1R1bP67GS5IFrkBvyigJAy6ZWeGnSh4Uk?usp=sharing)
 
-| Model Type                            | Drive Link | Name     |
-|---------------------------------------|------------|----------|
-| Run 0 (pretrained)                    | https://drive.google.com/drive/folders/1R1bP67GS5IFrkBvyigJAy6ZWeGnSh4Uk?usp=sharing     | original |
-| Run A (fine-tuned, original schedule) | https://drive.google.com/drive/folders/1R1bP67GS5IFrkBvyigJAy6ZWeGnSh4Uk?usp=sharing    | RunA     |
-| Run B (fine-tuned, theta^2, x = 2.00) | https://drive.google.com/drive/folders/1R1bP67GS5IFrkBvyigJAy6ZWeGnSh4Uk?usp=sharing   | RunB     |
+| Model Type | Drive Name |
+|------------|-----------|
+| Run 0 (pretrained)                    | original |
+| Run A (fine-tuned, original schedule) | RunA     |
+| Run B (fine-tuned, theta^2, x = 2.00)  | RunB     |
