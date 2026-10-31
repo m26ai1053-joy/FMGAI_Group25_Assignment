@@ -1,0 +1,77 @@
+Using Colab cache for faster access to the 'euvp-dataset' dataset.
+split fingerprint f8cc4714a30c | train fingerprint 6a9f33de995c
+validation 200 pairs (dark 137, scenes 63); skipped 0 exact, 1 near-duplicates of training images
+val fingerprint 24416ebc2732 (must match in both accounts)
+
+
+finetune_md5  38c97203e8ccafdfb80cb2be74b0bb3a  OK
+val_loss_md5  74920bbc7d211bcb34f589b831e9ac1d  OK
+commit        7db68f34060bbf1d7c5b8153664fb16a3dcda1ae  OK
+train_fp      6a9f33de995c  OK
+split_fp      f8cc4714a30c  OK
+Run A final weights: not in this account
+Run B final weights: 621.5 MB
+
+
+exec python -u /content/val_loss.py --run B --repo_dir /content/DiffWater/DiffWater --ckpt_prefix /content/drive/MyDrive/DW/LSUI/I390000_E78 --final_ckpt /content/drive/MyDrive/FoundationModel-Assignment/runs/RunB/final_gen.pth --val_root /content/euvp_val --out_dir /content/drive/MyDrive/FoundationModel-Assignment/runs/PostHocVal
+14:55:48 post-hoc validation, run=B exponent=2.0 args={'run': 'B', 'repo_dir': '/content/DiffWater/DiffWater', 'ckpt_prefix': '/content/drive/MyDrive/DW/LSUI/I390000_E78', 'final_ckpt': '/content/drive/MyDrive/FoundationModel-Assignment/runs/RunB/final_gen.pth', 'val_root': '/content/euvp_val', 'out_dir': '/content/drive/MyDrive/FoundationModel-Assignment/runs/PostHocVal', 'finetune_py': '/content/finetune.py', 'batch_size': 4, 'n_t': 10, 'seed': 1234, 'limit': 0, 'n_train_path': 3}
+14:56:05 validation pairs: 200   fingerprint 24416ebc2732
+14:56:16 timesteps scored: [100, 300, 500, 700, 900, 1100, 1300, 1500, 1700, 1900]
+14:56:16 pretrained weights, schedule OK: {'exponent': 2.0, 'abar_first': 0.9999979734420776, 'abar_last': 1.9236805481881447e-09, 'beta_min': 1.9999990854557836e-06, 'beta_max': 0.019899999722838402, 'T': 2000}
+14:57:05 pretrained: 40/200 images scored (0.8 min)
+
+
+exec python -u /content/val_loss.py --run B --repo_dir /content/DiffWater/DiffWater --ckpt_prefix /content/drive/MyDrive/DW/LSUI/I390000_E78 --final_ckpt /content/drive/MyDrive/FoundationModel-Assignment/runs/RunB/final_gen.pth --val_root /content/euvp_val --out_dir /content/drive/MyDrive/FoundationModel-Assignment/runs/PostHocVal
+14:55:48 post-hoc validation, run=B exponent=2.0 args={'run': 'B', 'repo_dir': '/content/DiffWater/DiffWater', 'ckpt_prefix': '/content/drive/MyDrive/DW/LSUI/I390000_E78', 'final_ckpt': '/content/drive/MyDrive/FoundationModel-Assignment/runs/RunB/final_gen.pth', 'val_root': '/content/euvp_val', 'out_dir': '/content/drive/MyDrive/FoundationModel-Assignment/runs/PostHocVal', 'finetune_py': '/content/finetune.py', 'batch_size': 4, 'n_t': 10, 'seed': 1234, 'limit': 0, 'n_train_path': 3}
+14:56:05 validation pairs: 200   fingerprint 24416ebc2732
+14:56:16 timesteps scored: [100, 300, 500, 700, 900, 1100, 1300, 1500, 1700, 1900]
+14:56:16 pretrained weights, schedule OK: {'exponent': 2.0, 'abar_first': 0.9999979734420776, 'abar_last': 1.9236805481881447e-09, 'beta_min': 1.9999990854557836e-06, 'beta_max': 0.019899999722838402, 'T': 2000}
+14:57:05 pretrained: 40/200 images scored (0.8 min)
+14:57:54 pretrained: 80/200 images scored (1.6 min)
+14:58:44 pretrained: 120/200 images scored (2.5 min)
+14:59:34 pretrained: 160/200 images scored (3.3 min)
+15:00:23 pretrained: 200/200 images scored (4.1 min)
+15:01:38 pretrained: mean loss 0.07859   (training-path estimate, random t: 0.09691, 0.08686, 0.08806)
+15:01:45 schedule stored in final_gen.pth: abar_last 1.9237e-09   expected for run B: 1.9237e-09
+15:01:45 fine-tuned weights, schedule OK: {'exponent': 2.0, 'abar_first': 0.9999979734420776, 'abar_last': 1.9236805481881447e-09, 'beta_min': 1.9999990854557836e-06, 'beta_max': 0.019899999722838402, 'T': 2000}
+15:01:45 relative weight change fine-tuned vs pretrained: 1.5183%  (must be > 0, else final_gen.pth is the pretrained file)
+15:02:35 fine-tuned: 40/200 images scored (0.8 min)
+15:03:25 fine-tuned: 80/200 images scored (1.7 min)
+15:04:15 fine-tuned: 120/200 images scored (2.5 min)
+15:05:04 fine-tuned: 160/200 images scored (3.3 min)
+15:05:54 fine-tuned: 200/200 images scored (4.1 min)
+15:07:09 fine-tuned: mean loss 0.03922   (training-path estimate, random t: 0.05514, 0.04459, 0.04968)
+15:07:09
+15:07:09 RESULT run B (exponent 2.0), 200 validation pairs, loss = mean |noise - predicted noise|
+15:07:09   pretrained : 0.07859  (sd over images 0.00618)
+15:07:09   fine-tuned : 0.03922  (sd over images 0.00873)
+15:07:09   fine-tuned minus pretrained: -0.03937  (s.e. 0.00034; lower for fine-tuned on 200 of 200 images)
+15:07:09   per timestep  t : pretrained  fine-tuned  difference
+15:07:09              100 : 0.26466     0.16917     -0.09549
+15:07:09              300 : 0.17348     0.06916     -0.10432
+15:07:09              500 : 0.11801     0.04004     -0.07797
+15:07:09              700 : 0.07526     0.02425     -0.05101
+15:07:09              900 : 0.04255     0.01807     -0.02448
+15:07:09             1100 : 0.03094     0.01528     -0.01566
+15:07:09             1300 : 0.02702     0.01391     -0.01311
+15:07:09             1500 : 0.02119     0.01404     -0.00715
+15:07:09             1700 : 0.01724     0.01404     -0.00321
+15:07:09             1900 : 0.01555     0.01422     -0.00133
+15:07:09 ALL DONE
+
+
+Run B per-timestep difference (fine-tuned minus pretrained)
+   t  pretrained  finetuned     diff  diff_se
+ 100     0.26466    0.16917 -0.09549  0.00203
+ 300     0.17348    0.06916 -0.10432  0.00090
+ 500     0.11801    0.04004 -0.07797  0.00045
+ 700     0.07526    0.02425 -0.05101  0.00027
+ 900     0.04255    0.01807 -0.02448  0.00024
+1100     0.03094    0.01528 -0.01566  0.00034
+1300     0.02702    0.01391 -0.01311  0.00028
+1500     0.02119    0.01404 -0.00715  0.00018
+1700     0.01724    0.01404 -0.00321  0.00011
+1900     0.01555    0.01422 -0.00133  0.00008
+run  n_val       val_fp  pretrained  finetuned     diff      se lower_on  train_loss_ep10
+  B    200 24416ebc2732     0.07859    0.03922 -0.03937 0.00034  200/200          0.05009
+results in Drive: /content/drive/MyDrive/FoundationModel-Assignment/runs/PostHocVal

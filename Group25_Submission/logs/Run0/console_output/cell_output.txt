@@ -1,0 +1,41 @@
+md5       38c97203e8ccafdfb80cb2be74b0bb3a   OK
+commit    7db68f34060bbf1d7c5b8153664fb16a3dcda1ae   OK
+split_fp  f8cc4714a30c   OK
+exec python -u /content/finetune.py --run 0 --repo_dir /content/DiffWater/DiffWater --ckpt_prefix /content/drive/MyDrive/DW/LSUI/I390000_E78 --eval_root /content/euvp_test --out_dir /content/drive/MyDrive/FoundationModel-Assignment/runs/Run0 --epochs 10 --batch_size 4 --n_eval 30 --n_samples 3
+13:38:42 run=0 exponent=1.0 args={'run': '0', 'repo_dir': '/content/DiffWater/DiffWater', 'ckpt_prefix': '/content/drive/MyDrive/DW/LSUI/I390000_E78', 'train_root': None, 'eval_root': '/content/euvp_test', 'out_dir': '/content/drive/MyDrive/FoundationModel-Assignment/runs/Run0', 'epochs': 10, 'batch_size': 4, 'lr': 1e-05, 'seed': 1234, 'n_samples': 3, 'n_eval': 30, 'stage': 'eval', 'benchmark': False, 'smoke': False}
+13:38:42 train pairs: 0   eval pairs available: 30 (using 30)
+13:38:45 sample epochs: [2, 4, 6, 8, 10]   n_samples per epoch: 3
+13:38:45 schedule OK: {'exponent': 1.0, 'abar_first': 0.9999989867210388, 'abar_last': 4.3859781726496294e-05, 'beta_min': 9.999999974752427e-07, 'beta_max': 0.009999999776482582, 'T': 2000}
+13:44:04 final eval 1/30 done (5.3 min elapsed)
+13:49:28 final eval 2/30 done (10.7 min elapsed)
+13:54:52 final eval 3/30 done (16.1 min elapsed)
+14:00:17 final eval 4/30 done (21.5 min elapsed)
+14:05:41 final eval 5/30 done (26.9 min elapsed)
+14:11:05 final eval 6/30 done (32.3 min elapsed)
+14:16:28 final eval 7/30 done (37.7 min elapsed)
+14:21:52 final eval 8/30 done (43.1 min elapsed)
+14:27:16 final eval 9/30 done (48.5 min elapsed)
+14:32:40 final eval 10/30 done (53.9 min elapsed)
+14:38:04 final eval 11/30 done (59.3 min elapsed)
+14:43:28 final eval 12/30 done (64.7 min elapsed)
+14:48:52 final eval 13/30 done (70.1 min elapsed)
+14:54:16 final eval 14/30 done (75.5 min elapsed)
+14:59:40 final eval 15/30 done (80.9 min elapsed)
+15:05:04 final eval 16/30 done (86.3 min elapsed)
+15:10:28 final eval 17/30 done (91.7 min elapsed)
+15:15:52 final eval 18/30 done (97.1 min elapsed)
+15:21:17 final eval 19/30 done (102.5 min elapsed)
+15:26:40 final eval 20/30 done (107.9 min elapsed)
+15:32:04 final eval 21/30 done (113.3 min elapsed)
+15:37:28 final eval 22/30 done (118.7 min elapsed)
+15:42:52 final eval 23/30 done (124.1 min elapsed)
+15:48:15 final eval 24/30 done (129.5 min elapsed)
+15:53:39 final eval 25/30 done (134.9 min elapsed)
+15:59:03 final eval 26/30 done (140.3 min elapsed)
+16:04:27 final eval 27/30 done (145.7 min elapsed)
+16:09:51 final eval 28/30 done (151.1 min elapsed)
+16:15:15 final eval 29/30 done (156.5 min elapsed)
+16:20:34 final eval 30/30 done (161.8 min elapsed)
+16:20:36 FINAL  PSNR 16.908  SSIM 0.7925  over 30 images  (input vs ref: PSNR 20.647 SSIM 0.8887)
+16:20:36 ALL DONE
+exit code: 0

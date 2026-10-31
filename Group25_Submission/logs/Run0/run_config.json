@@ -1,0 +1,29 @@
+{
+  "run": "0",
+  "exponent": 1.0,
+  "schedule": {
+    "exponent": 1.0,
+    "abar_first": 0.9999989867210388,
+    "abar_last": 4.3859781726496294e-05,
+    "beta_min": 9.999999974752427e-07,
+    "beta_max": 0.009999999776482582,
+    "T": 2000
+  },
+  "args": {
+    "run": "0",
+    "repo_dir": "/content/DiffWater/DiffWater",
+    "ckpt_prefix": "/content/drive/MyDrive/DW/LSUI/I390000_E78",
+    "train_root": null,
+    "eval_root": "/content/euvp_test",
+    "out_dir": "/content/drive/MyDrive/FoundationModel-Assignment/runs/Run0",
+    "epochs": 10,
+    "batch_size": 4,
+    "lr": 1e-05,
+    "seed": 1234,
+    "n_samples": 3,
+    "n_eval": 30,
+    "stage": "eval",
+    "benchmark": false,
+    "smoke": false
+  }
+}

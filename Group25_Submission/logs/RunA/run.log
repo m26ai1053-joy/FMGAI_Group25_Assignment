@@ -1,0 +1,137 @@
+07:59:23 run=A exponent=1.0 args={'run': 'A', 'repo_dir': '/content/DiffWater/DiffWater', 'ckpt_prefix': '/content/drive/MyDrive/DW/LSUI/I390000_E78', 'train_root': '/content/euvp_train', 'eval_root': '/content/euvp_test', 'out_dir': '/content/drive/MyDrive/FoundationModel-Assignment/runs/RunA', 'epochs': 10, 'batch_size': 4, 'lr': 1e-05, 'seed': 1234, 'n_samples': 3, 'n_eval': 30, 'stage': 'all', 'benchmark': False, 'smoke': False}
+07:59:23 train pairs: 800   eval pairs available: 30 (using 30)
+07:59:25 sample epochs: [2, 4, 6, 8, 10]   n_samples per epoch: 3
+07:59:25 schedule OK: {'exponent': 1.0, 'abar_first': 0.9999989867210388, 'abar_last': 4.3859781726496294e-05, 'beta_min': 9.999999974752427e-07, 'beta_max': 0.009999999776482582, 'T': 2000}
+08:00:25 epoch 1 step 50/200 loss 0.0638  (1.19 s/step)
+08:01:28 epoch 1 step 100/200 loss 0.0548  (1.23 s/step)
+08:02:31 epoch 1 step 150/200 loss 0.0541  (1.23 s/step)
+08:03:33 epoch 1 step 200/200 loss 0.0526  (1.24 s/step)
+08:03:33 epoch 1 done: train_loss 0.05631  (4.1 min, 4.1 min since start)
+08:04:37 epoch 2 step 50/200 loss 0.0647  (1.27 s/step)
+08:05:39 epoch 2 step 100/200 loss 0.0624  (1.26 s/step)
+08:06:42 epoch 2 step 150/200 loss 0.0529  (1.26 s/step)
+08:07:45 epoch 2 step 200/200 loss 0.0498  (1.26 s/step)
+08:07:45 epoch 2 done: train_loss 0.05745  (4.2 min, 8.3 min since start)
+08:07:58 saved resume state at epoch 2
+08:12:59 epoch 2 sample 1/3 saved (302 s total)
+08:18:00 epoch 2 sample 2/3 saved (602 s total)
+08:23:00 epoch 2 sample 3/3 saved (903 s total)
+08:23:01 epoch 2 sample PSNR 14.10 SSIM 0.780
+08:24:04 epoch 3 step 50/200 loss 0.0591  (1.27 s/step)
+08:25:07 epoch 3 step 100/200 loss 0.0553  (1.26 s/step)
+08:26:10 epoch 3 step 150/200 loss 0.0512  (1.26 s/step)
+08:27:13 epoch 3 step 200/200 loss 0.0548  (1.26 s/step)
+08:27:13 epoch 3 done: train_loss 0.05512  (4.2 min, 27.8 min since start)
+08:28:16 epoch 4 step 50/200 loss 0.0658  (1.27 s/step)
+08:29:19 epoch 4 step 100/200 loss 0.0543  (1.26 s/step)
+08:30:22 epoch 4 step 150/200 loss 0.0624  (1.26 s/step)
+08:31:24 epoch 4 step 200/200 loss 0.0541  (1.26 s/step)
+08:31:24 epoch 4 done: train_loss 0.05914  (4.2 min, 32.0 min since start)
+08:31:35 saved resume state at epoch 4
+08:36:37 epoch 4 sample 1/3 saved (302 s total)
+08:41:38 epoch 4 sample 2/3 saved (602 s total)
+08:46:38 epoch 4 sample 3/3 saved (902 s total)
+08:46:38 epoch 4 sample PSNR 14.70 SSIM 0.800
+08:47:41 epoch 5 step 50/200 loss 0.0572  (1.27 s/step)
+08:48:44 epoch 5 step 100/200 loss 0.0661  (1.26 s/step)
+08:49:47 epoch 5 step 150/200 loss 0.0567  (1.26 s/step)
+08:50:49 epoch 5 step 200/200 loss 0.0529  (1.26 s/step)
+08:50:50 epoch 5 done: train_loss 0.05822  (4.2 min, 51.4 min since start)
+08:51:53 epoch 6 step 50/200 loss 0.0635  (1.27 s/step)
+08:52:56 epoch 6 step 100/200 loss 0.0585  (1.26 s/step)
+08:53:58 epoch 6 step 150/200 loss 0.0560  (1.26 s/step)
+08:55:01 epoch 6 step 200/200 loss 0.0678  (1.26 s/step)
+08:55:01 epoch 6 done: train_loss 0.06145  (4.2 min, 55.6 min since start)
+08:55:09 saved resume state at epoch 6
+09:00:10 epoch 6 sample 1/3 saved (301 s total)
+09:05:11 epoch 6 sample 2/3 saved (602 s total)
+09:10:12 epoch 6 sample 3/3 saved (903 s total)
+09:10:12 epoch 6 sample PSNR 13.01 SSIM 0.706
+09:11:16 epoch 7 step 50/200 loss 0.0506  (1.27 s/step)
+09:12:18 epoch 7 step 100/200 loss 0.0556  (1.26 s/step)
+09:13:21 epoch 7 step 150/200 loss 0.0584  (1.26 s/step)
+09:14:24 epoch 7 step 200/200 loss 0.0632  (1.26 s/step)
+09:14:24 epoch 7 done: train_loss 0.05696  (4.2 min, 75.0 min since start)
+09:15:27 epoch 8 step 50/200 loss 0.0668  (1.27 s/step)
+09:16:30 epoch 8 step 100/200 loss 0.0643  (1.26 s/step)
+09:17:33 epoch 8 step 150/200 loss 0.0700  (1.26 s/step)
+09:18:36 epoch 8 step 200/200 loss 0.0520  (1.26 s/step)
+09:18:36 epoch 8 done: train_loss 0.06329  (4.2 min, 79.2 min since start)
+09:18:45 saved resume state at epoch 8
+09:23:46 epoch 8 sample 1/3 saved (301 s total)
+09:28:47 epoch 8 sample 2/3 saved (602 s total)
+09:33:47 epoch 8 sample 3/3 saved (902 s total)
+09:33:47 epoch 8 sample PSNR 14.16 SSIM 0.762
+09:34:51 epoch 9 step 50/200 loss 0.0704  (1.27 s/step)
+09:35:53 epoch 9 step 100/200 loss 0.0563  (1.26 s/step)
+09:36:56 epoch 9 step 150/200 loss 0.0611  (1.26 s/step)
+09:37:59 epoch 9 step 200/200 loss 0.0551  (1.26 s/step)
+09:37:59 epoch 9 done: train_loss 0.06070  (4.2 min, 98.6 min since start)
+09:39:02 epoch 10 step 50/200 loss 0.0611  (1.27 s/step)
+09:40:05 epoch 10 step 100/200 loss 0.0659  (1.26 s/step)
+09:41:08 epoch 10 step 150/200 loss 0.0573  (1.26 s/step)
+09:42:10 epoch 10 step 200/200 loss 0.0705  (1.26 s/step)
+09:42:10 epoch 10 done: train_loss 0.06372  (4.2 min, 102.8 min since start)
+09:42:23 saved resume state at epoch 10
+12:57:55 run=A exponent=1.0 args={'run': 'A', 'repo_dir': '/content/DiffWater/DiffWater', 'ckpt_prefix': '/content/drive/MyDrive/DW/LSUI/I390000_E78', 'train_root': '/content/euvp_train', 'eval_root': '/content/euvp_test', 'out_dir': '/content/drive/MyDrive/FoundationModel-Assignment/runs/RunA', 'epochs': 10, 'batch_size': 4, 'lr': 1e-05, 'seed': 1234, 'n_samples': 3, 'n_eval': 30, 'stage': 'all', 'benchmark': False, 'smoke': False}
+12:57:57 train pairs: 800   eval pairs available: 30 (using 30)
+12:57:59 sample epochs: [2, 4, 6, 8, 10]   n_samples per epoch: 3
+12:58:45 resumed from epoch 8
+12:58:45 schedule OK: {'exponent': 1.0, 'abar_first': 0.9999989867210388, 'abar_last': 4.3859781726496294e-05, 'beta_min': 9.999999974752427e-07, 'beta_max': 0.009999999776482582, 'T': 2000}
+12:58:58 epoch 8 sample PSNR 14.16 SSIM 0.762
+13:00:09 epoch 9 step 50/200 loss 0.0704  (1.40 s/step)
+13:01:17 epoch 9 step 100/200 loss 0.0563  (1.38 s/step)
+13:02:25 epoch 9 step 150/200 loss 0.0611  (1.38 s/step)
+13:03:34 epoch 9 step 200/200 loss 0.0551  (1.38 s/step)
+13:03:34 epoch 9 done: train_loss 0.06070  (4.6 min, 4.6 min since start)
+13:04:44 epoch 10 step 50/200 loss 0.0611  (1.39 s/step)
+13:05:52 epoch 10 step 100/200 loss 0.0659  (1.38 s/step)
+13:07:01 epoch 10 step 150/200 loss 0.0574  (1.38 s/step)
+13:08:10 epoch 10 step 200/200 loss 0.0698  (1.38 s/step)
+13:08:10 epoch 10 done: train_loss 0.06355  (4.6 min, 9.2 min since start)
+13:08:19 saved resume state at epoch 10
+13:13:40 epoch 10 sample 1/3 saved (321 s total)
+13:19:01 epoch 10 sample 2/3 saved (642 s total)
+13:24:23 epoch 10 sample 3/3 saved (963 s total)
+13:24:23 epoch 10 sample PSNR 13.91 SSIM 0.771
+13:29:43 final eval 4/30 done (5.3 min elapsed)
+13:35:03 final eval 5/30 done (10.7 min elapsed)
+13:40:24 final eval 6/30 done (16.0 min elapsed)
+13:45:46 final eval 7/30 done (21.4 min elapsed)
+13:51:07 final eval 8/30 done (26.7 min elapsed)
+13:56:27 final eval 9/30 done (32.1 min elapsed)
+14:01:49 final eval 10/30 done (37.4 min elapsed)
+14:07:10 final eval 11/30 done (42.8 min elapsed)
+14:12:31 final eval 12/30 done (48.1 min elapsed)
+14:17:51 final eval 13/30 done (53.5 min elapsed)
+14:23:12 final eval 14/30 done (58.8 min elapsed)
+14:28:32 final eval 15/30 done (64.2 min elapsed)
+14:33:53 final eval 16/30 done (69.5 min elapsed)
+14:39:14 final eval 17/30 done (74.9 min elapsed)
+14:44:35 final eval 18/30 done (80.2 min elapsed)
+14:49:56 final eval 19/30 done (85.5 min elapsed)
+14:55:17 final eval 20/30 done (90.9 min elapsed)
+15:00:37 final eval 21/30 done (96.2 min elapsed)
+15:05:58 final eval 22/30 done (101.6 min elapsed)
+15:11:19 final eval 23/30 done (106.9 min elapsed)
+15:16:40 final eval 24/30 done (112.3 min elapsed)
+18:51:23 run=A exponent=1.0 args={'run': 'A', 'repo_dir': '/content/DiffWater/DiffWater', 'ckpt_prefix': '/content/drive/MyDrive/DW/LSUI/I390000_E78', 'train_root': '/content/euvp_train', 'eval_root': '/content/euvp_test', 'out_dir': '/content/drive/MyDrive/FoundationModel-Assignment/runs/RunA', 'epochs': 10, 'batch_size': 4, 'lr': 1e-05, 'seed': 1234, 'n_samples': 3, 'n_eval': 30, 'stage': 'all', 'benchmark': False, 'smoke': False}
+18:51:24 train pairs: 800   eval pairs available: 30 (using 30)
+18:51:29 sample epochs: [2, 4, 6, 8, 10]   n_samples per epoch: 3
+18:52:00 resumed from epoch 10
+18:52:00 schedule OK: {'exponent': 1.0, 'abar_first': 0.9999989867210388, 'abar_last': 4.3859781726496294e-05, 'beta_min': 9.999999974752427e-07, 'beta_max': 0.009999999776482582, 'T': 2000}
+18:52:13 epoch 10 sample PSNR 13.91 SSIM 0.771
+18:57:33 final eval 25/30 done (5.3 min elapsed)
+19:10:21 run=A exponent=1.0 args={'run': 'A', 'repo_dir': '/content/DiffWater/DiffWater', 'ckpt_prefix': '/content/drive/MyDrive/DW/LSUI/I390000_E78', 'train_root': '/content/euvp_train', 'eval_root': '/content/euvp_test', 'out_dir': '/content/drive/MyDrive/FoundationModel-Assignment/runs/RunA', 'epochs': 10, 'batch_size': 4, 'lr': 1e-05, 'seed': 1234, 'n_samples': 3, 'n_eval': 30, 'stage': 'all', 'benchmark': False, 'smoke': False}
+19:10:24 train pairs: 800   eval pairs available: 30 (using 30)
+19:10:27 sample epochs: [2, 4, 6, 8, 10]   n_samples per epoch: 3
+19:11:48 resumed from epoch 10
+19:11:48 schedule OK: {'exponent': 1.0, 'abar_first': 0.9999989867210388, 'abar_last': 4.3859781726496294e-05, 'beta_min': 9.999999974752427e-07, 'beta_max': 0.009999999776482582, 'T': 2000}
+19:12:15 epoch 10 sample PSNR 13.91 SSIM 0.771
+19:17:48 final eval 26/30 done (5.5 min elapsed)
+19:23:19 final eval 27/30 done (11.1 min elapsed)
+19:28:50 final eval 28/30 done (16.6 min elapsed)
+19:34:21 final eval 29/30 done (22.1 min elapsed)
+19:39:51 final eval 30/30 done (27.6 min elapsed)
+19:42:34 FINAL  PSNR 14.360  SSIM 0.7701  over 30 images  (input vs ref: PSNR 20.647 SSIM 0.8887)
+19:42:35 ALL DONE

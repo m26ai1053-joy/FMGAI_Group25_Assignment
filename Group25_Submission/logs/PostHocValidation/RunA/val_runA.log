@@ -1,0 +1,36 @@
+14:56:59 post-hoc validation, run=A exponent=1.0 args={'run': 'A', 'repo_dir': '/content/DiffWater/DiffWater', 'ckpt_prefix': '/content/drive/MyDrive/DW/LSUI/I390000_E78', 'final_ckpt': '/content/drive/MyDrive/FoundationModel-Assignment/runs/RunA/final_gen.pth', 'val_root': '/content/euvp_val', 'out_dir': '/content/drive/MyDrive/FoundationModel-Assignment/runs/PostHocVal', 'finetune_py': '/content/finetune.py', 'batch_size': 4, 'n_t': 10, 'seed': 1234, 'limit': 0, 'n_train_path': 3}
+14:57:17 validation pairs: 200   fingerprint 24416ebc2732
+14:57:54 timesteps scored: [100, 300, 500, 700, 900, 1100, 1300, 1500, 1700, 1900]
+14:57:54 pretrained weights, schedule OK: {'exponent': 1.0, 'abar_first': 0.9999989867210388, 'abar_last': 4.3859781726496294e-05, 'beta_min': 9.999999974752427e-07, 'beta_max': 0.009999999776482582, 'T': 2000}
+14:58:45 pretrained: 40/200 images scored (0.8 min)
+14:59:35 pretrained: 80/200 images scored (1.7 min)
+15:00:29 pretrained: 120/200 images scored (2.6 min)
+15:01:23 pretrained: 160/200 images scored (3.5 min)
+15:02:16 pretrained: 200/200 images scored (4.4 min)
+15:03:37 pretrained: mean loss 0.05559   (training-path estimate, random t: 0.07277, 0.06126, 0.06565)
+15:03:52 schedule stored in final_gen.pth: abar_last 4.3860e-05   expected for run A: 4.3860e-05
+15:03:52 fine-tuned weights, schedule OK: {'exponent': 1.0, 'abar_first': 0.9999989867210388, 'abar_last': 4.3859781726496294e-05, 'beta_min': 9.999999974752427e-07, 'beta_max': 0.009999999776482582, 'T': 2000}
+15:03:53 relative weight change fine-tuned vs pretrained: 1.6918%  (must be > 0, else final_gen.pth is the pretrained file)
+15:04:48 fine-tuned: 40/200 images scored (0.9 min)
+15:05:41 fine-tuned: 80/200 images scored (1.8 min)
+15:06:35 fine-tuned: 120/200 images scored (2.7 min)
+15:07:28 fine-tuned: 160/200 images scored (3.6 min)
+15:08:22 fine-tuned: 200/200 images scored (4.5 min)
+15:09:43 fine-tuned: mean loss 0.05253   (training-path estimate, random t: 0.07022, 0.05967, 0.06383)
+15:09:43 
+15:09:43 RESULT run A (exponent 1.0), 200 validation pairs, loss = mean |noise - predicted noise|
+15:09:43   pretrained : 0.05559  (sd over images 0.01313)
+15:09:43   fine-tuned : 0.05253  (sd over images 0.01179)
+15:09:43   fine-tuned minus pretrained: -0.00306  (s.e. 0.00039; lower for fine-tuned on 130 of 200 images)
+15:09:43   per timestep  t : pretrained  fine-tuned  difference
+15:09:43              100 : 0.23852     0.21462     -0.02390
+15:09:43              300 : 0.10227     0.09780     -0.00447
+15:09:43              500 : 0.06187     0.05918     -0.00269
+15:09:43              700 : 0.04127     0.03960     -0.00168
+15:09:43              900 : 0.02882     0.02748     -0.00135
+15:09:43             1100 : 0.02162     0.02094     -0.00068
+15:09:43             1300 : 0.01731     0.01748     +0.00017
+15:09:43             1500 : 0.01523     0.01611     +0.00087
+15:09:43             1700 : 0.01450     0.01614     +0.00164
+15:09:43             1900 : 0.01446     0.01592     +0.00146
+15:09:43 ALL DONE
